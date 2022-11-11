@@ -6,11 +6,11 @@ local supported_games = {
 }
 
 local success, message = pcall(function()
-  loadstring(game:HttpGet(supported_games[game.PlaceId]))()
+    loadstring(game:HttpGet(supported_games[game.PlaceId]))()
 end)
 
 if success then
-print("Thanks for choosing deadware, Script loaded.")
+    print("Thanks for choosing deadware, Script loaded.")
 else
-print("Game not supported!")
+    print("Game not supported!")
 end
